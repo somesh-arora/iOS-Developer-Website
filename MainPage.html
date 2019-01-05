@@ -31,6 +31,21 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+.zoom {
+  
+  background-color: transparent;
+  transition: transform .05s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25); 
+}
 </style>
 <body>
 
@@ -66,10 +81,10 @@ body, html {
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-center w3-text-white" style="padding:250px">
+  <div class="w3-left w3-text-white" style="padding:100px">
     <span class="w3-jumbo w3-hide-small w3-display-container">Somesh Arora</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-center">Somesh Arora</span><br>
-    <span class="w3-xxlarge w3-center">iOS Developer</span>
+    <span class="w3-xxlarge w3-display-container">iOS Developer</span>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -82,7 +97,7 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:200px 16px" id="about">
+<div class="w3-container" style="padding:100px 100px" id="about">
   <p class="w3-center"><img src="profile.png" class="w3-circle" style="height:250px;width:250px" alt="Avatar"></p>
   <h3 class="w3-center w3-xxlarge">ABOUT ME</h3>
   <p class="w3-center w3-large">My name is Somesh Arora and I am an iOS developer at Garmin International. In past, I have experience working on development and testing of iOS and Android applications for Abbott Laboratories and Blackboard. I am also an experienced Undergraduate Teaching Assistant with a demonstrated history of holding multiple Leadership Positions. I am skilled in Swift, Objective-C, Java, Agile Methodologies, Software Development Cycle, and User Interface Design. I am a strong education professional with a Bachelor’s Degree in Computer Science from The University of Texas at Arlington.</p>
@@ -116,61 +131,98 @@ body, html {
   <p>This app is just so lorem ipsum.</p>
 
   <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
-      <p>Fast</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="xcode.png" style="height:100px;width:100px"></i>
+      <h5>XCode</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
-      <p>Loved</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="swift.png" style="height:100px;width:100px"></i>
+      <h5>Swift</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
-      <p>Clarity</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="apple.png" style="height:100px;width:100px"></i>
+      <h5>Objective-C</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
-      <p>Power</p>
-    </div>
-  </div>
-
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
-      <p>Sharp</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
-      <p>Cloud</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
-      <p>Global</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
-      <p>Storage</p>
+    <div class="w3-col s3 zoom">
+       <i class=" w3-text-white "><img src="ios.png" style="height:100px;width:100px"></i>
+      <h5>iOS SDK</h5>
     </div>
   </div>
   
   <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
-      <p>Safe</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="sketch.png" style="height:100px;width:100px"></i>
+      <h5>Sketch</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
-      <p>Stabile</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white "><img src="invision.png" style="height:100px;width:100px"></i>
+      <h5>Invision</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
-      <p>Connected</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="cocoapods.png" style="height:100px;width:100px"></i>
+      <h5>Cocoapods</h5>
     </div>
-    <div class="w3-col s3">
-      <i class="fa fa-image w3-text-pink w3-jumbo"></i>
-      <p>HD</p>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="git.png" style="height:100px;width:100px"></i>
+      <h5>Version Control</h5>
     </div>
   </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="atlassian.png" style="height:100px;width:100px"></i>
+      <h5>Atlassian Tools</h5>
+    </div>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white "><img src="firebase.png" style="height:100px;width:100px"></i>
+      <h5>Firebase</h5>
+    </div>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="frameworks.png" style="height:100px;width:100px"></i>
+      <h5>Frameworks</h5>
+    </div>
+    <div class="w3-col s3 zoom">
+      <i class="w3-text-white"><img src="json.png" style="height:100px;width:100px"></i>
+      <h5>JSON</h5>
+    </div>
+  </div>
+</div>
+
+<!--Experience Section-->
+<div class="w3-container w3-center" style="padding:128px 16px" id="pricing">
+  <h1 class="w3-xxlarge w3-margin-bottom"><b>Work Experience</b></h1>
+    <div class="w3-row-padding" style="margin-top:64px">
+      
+      <div class="w3-third w3-section">
+        <div class="w3-card w3-container w3-hover-shadow w3-border">
+          <i class="w3-text-theme"> <img src="garmin.jpg" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px"></i>
+            <h1>Garmin International</h2>
+            <h2>iOS Developer</h3>
+            <h3>Oct 18 - Present</h3>
+            <h3>Olathe, KS</h3><br>
+        </div>
+    </div>
+
+<div class="w3-third w3-section">
+  <div class="w3-card w3-container w3-hover-shadow w3-border">
+  <i class="w3-text-theme"> <img src="abbott.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px"></i>
+    <h1>Abbott Laboratories</h2>
+    <h2>iOS Developer Co-op</h3>
+    <h3>Jul 17 - Jan 18</h3>
+    <h3>Sylmar, CA</h3><br>
+  </div>
+</div>
+
+<div class="w3-third w3-section">
+  <div class="w3-card w3-container w3-hover-shadow w3-border">
+  <i class="w3-text-theme"> <img src="blackboard.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px"></i>
+    <h1>Blackboard Inc.</h2>
+    <h2>Mobile Developer</h3>
+    <h3>Jan 18 - Aug 18</h3>
+    <h3>Arlington, TX / Phoenix, AZ</h3><br>
+  </div>
+</div>
+</div>
 </div>
 
 <!-- Promo Section - "We know design" -->
@@ -189,50 +241,57 @@ body, html {
 
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+  <h3 class="w3-center">Projects</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+      <div class="w3-card w3-center w3-hover-shadow w3-border">
+
+        <img src="Wallet_icon.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px">
         <div class="w3-container">
-          <h3>John Doe</h3>
+          <h3>Wallet</h3>
           <p class="w3-opacity">CEO & Founder</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-screen"></i> Screenshots</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-screen"></i> View Project</button></p>
         </div>
       </div>
     </div>
+
+
+
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="w3-card w3-center w3-hover-shadow w3-border">
+        <img src="AssetManager_icon.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px">
         <div class="w3-container">
-          <h3>Anja Doe</h3>
+          <h3>Mastering iOS</h3>
           <p class="w3-opacity">Art Director</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Screenshots</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-screen"></i> View Project</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <div class="w3-card w3-center w3-hover-shadow w3-border">
+        <img src="HUD_icon.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px">
         <div class="w3-container">
-          <h3>Mike Ross</h3>
+          <h3>Heads Up Display</h3>
           <p class="w3-opacity">Web Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Screenshots</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-screen"></i> View Project</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <div class="w3-card w3-center w3-hover-shadow w3-border">
+        <img src="ConfirmRX_icon.png" style="height:150px;width:150px;margin-top: 30px; margin-bottom: 30px">
         <div class="w3-container">
-          <h3>Dan Star</h3>
+          <h3>Confirm RX</h3>
           <p class="w3-opacity">Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-envelope"></i> Screenshots</button></p>
+          <p><button class="w3-button w3-green w3-block"><i class="fa fa-screen"></i> View Project</button></p>
         </div>
       </div>
     </div>
